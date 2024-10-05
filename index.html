@@ -3,42 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Design Mastery | RENTAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
+   <header>
+    <nav>
         <div class="navbar">
-            <h1>GoodNews</h1>
-            <a href="#">Home</a>
-            <a href="#">Political</a>
-            <a href="#">Sports</a>
-            <a href="#">About us</a>
-            <h2>MENU</h2>
-            <hr>
-            <h1 class="para1">
-                Stop talking the <br> Global South <br>for granted
-            </h1>
-            <p>23 june 2024</p>
-            <i class="fa-regular fa-clock" id="icon"></i>
-            <hr class="horizontal">
-           <p class="para2">
-            Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Repellendus, <br>excepturi. Repellat consequuntur <br>accusantium eligendi libero tempora <br> asperiores exercitationem voluptate <br> Inventore ut atque ipsa iusto <br>neque sint iste autem quasi? <br>Lorem ipsum dolor sit amet consectetur  <br> Harum aspernatur explicabo itaque <br> </p>
-            <button>Read Now</button>
-            <img src="./mountain.jpg" class="pic">
-            <div class="leave">
-            <img src="./images.jpg"> 
-         <h1 class="para3">Pakistan Imran Khan's partyf...</h1>
-         <p class="para4">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Aspernatur, sit!</p>
+        <div class="nav">
+            <div class="nav_header">
+            <div class="nav_logo">
+                <a href="#">RENTAL</a>
             </div>
-            <div class="flower">
-                <img src="./leave.jpg">
-                <h1 class="para5">Pakistan Imran Khan's partyf...</h1>
-                <p class="para6">Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit Corrupti, odio!</p>
+            <div class="nav_menu_btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
             </div>
-        
-     </div>
+           </div>
+            <ul class="nav_links" id="nav-link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rent">Rent</a></li>
+                <li><a href="#ride">Ride</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav_btn">
+            <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </nav>
+   <div class="header_container" id="home">
+    <h1>PREMIUM CAR RENTAL</h1>
+    <form action="/">
+      <div class="input_group">
+        <label for="location">Pick up & Return location</label>
+        <input type="text" name="location" id="location" placeholder="Dallas, Texas" />
+      </div>
+      <div class="input_group">
+        <label for="start">Start</label>
+        <input type="text" name="start" id="start" placeholder="Aug 16,10:00AM"/>
+      </div>
+      <div class="input_group">
+        <label for="stop">Stop</label>
+        <input type="text" name="stop" id="stop" placeholder="Aug 18,10:00 PM"/>
+      </div>
+      <button class="btn">
+        <i class="ri-search-line"></i>
+      </button>
+    </form>
+    <img src="./header.png"/>
+  </div>
+  <a href="#about" class="scroll_down">
+    <i class="ri-arrow-down-line"></i>
+  </a>
+</header>
+
+<section class="section_container range_container" id="about">
+  <h2 class="section_header">WIDE RANGE OF VEHICLES</h2>
+  <div class="range_grid">
+    <div class="range_card">
+      <img src="./range-1.jpg"/>
+      <div class="range_details">
+        <h4>CARS</h4>
+        <a href="#"><i class="ri-arrow-right-line"></i></a>
+      </div>
     </div>
+    <div class="range_card">
+      <img src="./range-2.jpg"/>
+      <div class="range_details">
+        <h4>SUVS</h4>
+        <a href="#"><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="range_card">
+      <img src="./range-3.jpg"/>
+      <div class="range_details">
+        <h4>VANS</h4>
+        <a href="#"><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="range_card">
+      <img src="./range-4.jpg"/>
+      <div class="range_details">
+        <h4>ELECTRIC</h4>
+        <a href="#"><i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section_container location_container" id="rent">
+  <div class="location_image">
+    <img src="./location.png"/>
+  </div>
+  <div class="location_content">
+    <h2 class="section_header">FIND CAR IN YOUR LOCATIONS</h2>
+    <p>
+      Discover the perfect vehicle tailored to your needs, wherever you are.
+      Our 'Find Car in Your Locations' feature allows you to effortlessly
+      search and select from our premium fleet available near you. Whether
+      you're looking for a luxury sedan, a spacious SUV, or a sporty
+      convertible, our easy-to-use tool ensures you find the ideal car for
+      your journey. Simply enter your location, and let us connect you with
+      top-tier vehicles ready for rental.
+    </p>
+    <div class="location_btn">
+      <button class="btn">Find a Location</button>
+    </div>
+  </div>
+</section>
+
+<section class="select_container" id="ride">
+  <h2 class="section_header">PICK YOUR DREAM CAR TODAY</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="select_card">
+          <img src="./select-1.png"/>
+          <div class="select_info">
+            <div class="select_info_card">
+              <span><i class="ri-speed-up-line"></i></span>
+              <h4>200 <span>km/h</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-settings-5-line"></i></span>
+              <h4>6 <span>speed</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-roadster-line"></i></span>
+              <h4>5 <span>seats</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-signpost-line"></i></span>
+              <h4>15 <span>milage</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="select_card">
+          <img src="./select-2.png" />
+          <div class="select_info">
+            <div class="select_info_card">
+              <span><i class="ri-speed-up-line"></i></span>
+              <h4>215 <span>km/h</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-settings-5-line"></i></span>
+              <h4>6 <span>speed</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-roadster-line"></i></span>
+              <h4>5 <span>seats</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-signpost-line"></i></span>
+              <h4>16 <span>milage</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="select_card">
+          <img src="./select-3.png"/>
+          <div class="select_info">
+            <div class="select_info_card">
+              <span><i class="ri-speed-up-line"></i></span>
+              <h4>306 <span>km/h</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-settings-5-line"></i></span>
+              <h4>6 <span>speed</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-roadster-line"></i></span>
+              <h4>5 <span>seats</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-signpost-line"></i></span>
+              <h4>12 <span>milage</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="select_card">
+          <img src="./select-4.png"/>
+          <div class="select_info">
+            <div class="select_info_card">
+              <span><i class="ri-speed-up-line"></i></span>
+              <h4>350 <span>km/h</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-settings-5-line"></i></span>
+              <h4>6 <span>speed</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-roadster-line"></i></span>
+              <h4>2 <span>seats</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-signpost-line"></i></span>
+              <h4>08 <span>milage</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="select_card">
+          <img src="./select-5.png"/>
+          <div class="select_info">
+            <div class="select_info_card">
+              <span><i class="ri-speed-up-line"></i></span>
+              <h4>254 <span>km/h</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-settings-5-line"></i></span>
+              <h4>6 <span>speed</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-roadster-line"></i></span>
+              <h4>5 <span>seats</span></h4>
+            </div>
+            <div class="select_info_card">
+              <span><i class="ri-signpost-line"></i></span>
+              <h4>10 <span>milage</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form action="/" class="select_form">
+    <div class="select_price">
+      <span><i class="ri-price-tag-3-line"></i></span>
+      <div><span id="select-price">225</span> /day</div>
+    </div>
+    <div class="select_btns">
+      <button class="btn">View Details</button>
+      <button class="btn">Rent Now</button>
+    </div>
+  </form>
+</section>
+
+<section class="section_container story_container">
+  <h2 class="section_header">STORIES BEHIND THE WHEEL</h2>
+  <div class="story_grid">
+    <div class="story_card">
+      <div class="story_date">
+        <span>12</span>
+        <div>
+          <p>January</p>
+          <p>2024</p>
+        </div>
+      </div>
+      <h4>Adventures on the Open Road</h4>
+      <p>
+        Join us as we dive into the exhilarating stories of travelers who
+        embarked on unforgettable journeys with PREMIUM CAR RENTAL.
+      </p>
+      <img src="./story-1.jpg"/>
+    </div>
+    <div class="story_card">
+      <div class="story_date">
+        <span>04</span>
+        <div>
+          <p>March</p>
+          <p>2024</p>
+        </div>
+      </div>
+      <h4>Luxury and Comfort: Experiences</h4>
+      <p>
+        In this series, we highlight the luxurious touches, unparalleled
+        comfort, and exceptional service that make every ride.
+      </p>
+      <img src="./story-2.jpg"/>
+    </div>
+    <div class="story_card">
+      <div class="story_date">
+        <span>18</span>
+        <div>
+          <p>June</p>
+          <p>2024</p>
+        </div>
+      </div>
+      <h4>Cars that Adapt to Your Lifestyle</h4>
+      <p>
+        Read about how our versatile vehicles have seamlessly integrated
+        into the lives of professionals and families alike.
+      </p>
+      <img src="./story-3.jpg"/>
+    </div>
+  </div>
+</section>
+
+<section class="banner_container">
+  <div class="banner_wrapper">
+    <img src="./banner-1.png"/>
+    <img src="./banner-2.png"/>
+    <img src="./banner-3.png"/>
+    <img src="./banner-4.png" />
+    <img src="./banner-5.png"/>
+    <img src="./banner-6.png"/>
+    <img src="./banner-7.png" />
+    <img src="./banner-8.png"/>
+    <img src="./banner-9.png"/>
+    <img src="./banner-10.png"/>
+  </div>
+</section>
+
+<section class="download">
+  <div class="section_container download_container">
+    <div class="download_content">
+      <h2 class="section_header">PREMIUM CAR RENTAL</h2>
+      <div class="download_links">
+        <a href="#">
+          <img src="./apple.png"/>
+        </a>
+        <a href="#">
+          <img src="./google.png"/>
+        </a>
+      </div>
+    </div>
+    <div class="download_image">
+      <img src="./download.png"/>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="contact">
+  <div class="section_container news_container">
+    <h2 class="section_header">Stay up to date on all the latest news.</h2>
+    <form action="/">
+      <input type="text" placeholder="Your email" />
+      <button class="btn">
+        <i class="ri-send-plane-fill"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="section_container footer_container">
+    <div class="footer_col">
+      <h4>Resources</h4>
+      <ul class="footer_links">
+        <li><a href="#">Installation Manual</a></li>
+        <li><a href="#">Release Note</a></li>
+        <li><a href="#">Community Help</a></li>
+      </ul>
+    </div>
+    <div class="footer_col">
+      <h4>Company</h4>
+      <ul class="footer_links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+    <div class="footer_col">
+      <h4>Product</h4>
+      <ul class="footer_links">
+        <li><a href="#">Demo</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
+    </div>
+    <div class="footer_col">
+      <h4>Follow Us</h4>
+      <ul class="footer_socials">
+        <li>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_bar">
+    Copyright © 2024 Web Design Mastery. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
+
